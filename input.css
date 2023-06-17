@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    *{
+        @apply font-ks text-[#1E1F36]; 
+    }
+}
+
+@layer components{
+    .question{
+        @apply  border-b border-[#E8E8EA] border-solid py-4 
+    }
+    .question > section{
+       @apply flex items-center justify-between
+    }
+ 
+}

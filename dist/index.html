@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style> -->
+  </head>
+  <body
+    class="min-h-screen min-w-full bg-gradient-to-b from-[#B068E9] to-[#6463E7]"
+  >
+    <section class="w-[327px] h-[643px] mt-10 mx-auto">
+      <img
+        src="./images/illustration-woman-online-mobile.svg"
+        alt=""
+        class="w-[237px] h-[180px] mx-auto"
+      />
+
+      <section
+        class="bg-white rounded-[24px] -mt-[72px] pt-[132px] px-6 text-question"
+      >
+        <section class="font-bold text-center text-faq mb-4">FAQ</section>
+        <section class="question btn">
+          <section >
+            <section class="font-normal hover:text-[#F47B56]" id="q0">How many team members can I invite?</section>
+            <button>
+              <img src="./images/icon-arrow-down.svg" alt="Arrow down"  id="arrow0" class="rotate-0" />
+            </button>
+          </section>
+
+          <p class="pt-3 hidden text-[#787887]" id="p0">
+            You can invite up to 2 additional users on the Free plan. There is
+            no limit on team members for the Premium plan.
+          </p>
+        </section>
+        <section class="question btn">
+          <section >
+            <section class="font-normal hover:text-[#F47B56]" id="q1">What is the maximum file upload size?</section>
+            <button>
+              <img src="./images/icon-arrow-down.svg" alt="Arrow down"  id="arrow1" class="rotate-0"/>
+            </button>
+          </section>
+
+          <p class="pt-3 hidden text-[#787887]" id="p1">
+            No more than 2GB. All files in your account must fit your allotted
+            storage space.
+          </p>
+        </section>
+        <section class="question btn">
+          <section >
+            <section class="font-normal hover:text-[#F47B56]" id="q2">How do I reset my password?</section>
+            <button>
+              <img src="./images/icon-arrow-down.svg" alt="Arrow down"  id="arrow2" class="rotate-0" />
+            </button>
+          </section>
+
+          <p class="pt-3 hidden text-[#787887]" id="p2">
+            Click “Forgot password” from the login page or “Change password”
+            from your profile page. A reset link will be emailed to you.
+          </p>
+        </section>
+        <section class="question btn">
+          <section>
+            <section class="font-normal hover:text-[#F47B56]" id="q3">Do you provide additional support?</section>
+            <button >
+              <img src="./images/icon-arrow-down.svg" alt="Arrow down" id="arrow3" class="rotate-0"/>
+            </button>
+          </section>
+
+          <p class="pt-3 hidden text-[#787887]" id="p3">
+            Yes! Send us a message and we&apos;ll process your request no
+            questions asked. Do you provide additional support? Chat and email
+            support is available 24/7. Phone lines are open during normal
+            business hours.
+          </p>
+        </section>
+      </section>
+    </section>
+    <script>
+      const paragraph_id = ["p0", "p1", "p2", "p3"];
+      const question_id = ["q0", "q1", "q2", "q3"];
+      const arrow_id = ["arrow0", "arrow1", "arrow2", "arrow3"];
+      const btnList = document.getElementsByClassName("btn");
+      console.log(btnList)
+      Array.from(btnList).forEach((element, index) => {
+        element.addEventListener("click", (e, i) => {
+          const question = document.getElementById(question_id[index]);
+          const paragraph = document.getElementById(paragraph_id[index]);
+          const arrow = document.getElementById(arrow_id[index]);
+
+          question.classList.toggle('font-normal');
+          question.classList.toggle('font-bold');
+          paragraph.classList.toggle('hidden');
+          paragraph.classList.toggle('display');
+          arrow.classList.toggle('rotate-0');
+          arrow.classList.toggle('rotate-180');
+        });
+      });
+    </script>
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>. -->
+    <!-- </div> -->
+  </body>
+</html>
