@@ -32,72 +32,117 @@
     </style> -->
   </head>
   <body
-    class="min-h-screen min-w-full bg-gradient-to-b from-[#B068E9] to-[#6463E7]"
+    class="min-h-screen min-w-full bg-gradient-to-b from-[#B068E9] to-[#6463E7] lg:flex lg:justify-center lg:items-center"
   >
-    <section class="w-[327px] h-[643px] mt-10 mx-auto">
+    <section class="card">
       <img
         src="./images/illustration-woman-online-mobile.svg"
         alt=""
-        class="w-[237px] h-[180px] mx-auto"
+        class="w-[237px] h-[180px] mx-auto lg:hidden"
       />
 
       <section
-        class="bg-white rounded-[24px] -mt-[72px] pt-[132px] px-6 text-question"
+        class="bg-white rounded-[24px] -mt-[72px] pt-[132px] px-6 text-question pb-12 lg:mt-0 lg:flex lg:relative lg:p-0 lg:h-full lg:text-question-lg"
       >
-        <section class="font-bold text-center text-faq mb-4">FAQ</section>
-        <section class="question btn">
-          <section >
-            <section class="font-normal hover:text-[#F47B56]" id="q0">How many team members can I invite?</section>
-            <button>
-              <img src="./images/icon-arrow-down.svg" alt="Arrow down"  id="arrow0" class="rotate-0" />
-            </button>
+        <img
+          src="./images/illustration-woman-online-desktop.svg"
+          alt=""
+          class="clipart hidden lg:block w-[472px] h-[359px]"
+        />
+        <img
+          src="./images/illustration-box-desktop.svg"
+          alt=""
+          class="hidden lg:block w-[240px] h-[236px] absolute -left-[117px] top-[170px]"
+        />
+        <section class="lg:ml-[475px] lg:mt-[65px]">
+          <section
+            class="font-bold text-center text-faq mb-4 lg:text-left lg:mb-[19px]"
+          >
+            FAQ
           </section>
 
-          <p class="pt-3 hidden text-[#787887]" id="p0">
-            You can invite up to 2 additional users on the Free plan. There is
-            no limit on team members for the Premium plan.
-          </p>
-        </section>
-        <section class="question btn">
-          <section >
-            <section class="font-normal hover:text-[#F47B56]" id="q1">What is the maximum file upload size?</section>
-            <button>
-              <img src="./images/icon-arrow-down.svg" alt="Arrow down"  id="arrow1" class="rotate-0"/>
-            </button>
-          </section>
+          <section class="question btn">
+            <section>
+              <section class="font-normal hover:text-[#F47B56]" id="q0">
+                How many team members can I invite?
+              </section>
+              <button>
+                <img
+                  src="./images/icon-arrow-down.svg"
+                  alt="Arrow down"
+                  id="arrow0"
+                  class="rotate-0"
+                />
+              </button>
+            </section>
 
-          <p class="pt-3 hidden text-[#787887]" id="p1">
-            No more than 2GB. All files in your account must fit your allotted
-            storage space.
-          </p>
-        </section>
-        <section class="question btn">
-          <section >
-            <section class="font-normal hover:text-[#F47B56]" id="q2">How do I reset my password?</section>
-            <button>
-              <img src="./images/icon-arrow-down.svg" alt="Arrow down"  id="arrow2" class="rotate-0" />
-            </button>
+            <p class=".answer hidden" id="p0">
+              You can invite up to 2 additional users on the Free plan. There is
+              no limit on team members for the Premium plan.
+            </p>
           </section>
+          <section class="question btn">
+            <section>
+              <section class="font-normal hover:text-[#F47B56]" id="q1">
+                What is the maximum file upload size?
+              </section>
+              <button>
+                <img
+                  src="./images/icon-arrow-down.svg"
+                  alt="Arrow down"
+                  id="arrow1"
+                  class="rotate-0"
+                />
+              </button>
+            </section>
 
-          <p class="pt-3 hidden text-[#787887]" id="p2">
-            Click “Forgot password” from the login page or “Change password”
-            from your profile page. A reset link will be emailed to you.
-          </p>
-        </section>
-        <section class="question btn">
-          <section>
-            <section class="font-normal hover:text-[#F47B56]" id="q3">Do you provide additional support?</section>
-            <button >
-              <img src="./images/icon-arrow-down.svg" alt="Arrow down" id="arrow3" class="rotate-0"/>
-            </button>
+            <p class="answers hidden" id="p1">
+              No more than 2GB. All files in your account must fit your allotted
+              storage space.
+            </p>
           </section>
+          <section class="question btn">
+            <section>
+              <section class="font-normal hover:text-[#F47B56]" id="q2">
+                How do I reset my password?
+              </section>
+              <button>
+                <img
+                  src="./images/icon-arrow-down.svg"
+                  alt="Arrow down"
+                  id="arrow2"
+                  class="rotate-0"
+                />
+              </button>
+            </section>
 
-          <p class="pt-3 hidden text-[#787887]" id="p3">
-            Yes! Send us a message and we&apos;ll process your request no
-            questions asked. Do you provide additional support? Chat and email
-            support is available 24/7. Phone lines are open during normal
-            business hours.
-          </p>
+            <p class=".answer hidden" id="p2">
+              Click “Forgot password” from the login page or “Change password”
+              from your profile page. A reset link will be emailed to you.
+            </p>
+          </section>
+          <section class="question btn">
+            <section>
+              <section class="font-normal hover:text-[#F47B56]" id="q3">
+                Do you provide additional support?
+              </section>
+              <button>
+                <img
+                  src="./images/icon-arrow-down.svg"
+                  alt="Arrow down"
+                  id="arrow3"
+                  class="rotate-0"
+                />
+              </button>
+            </section>
+
+            <p class=".answer hidden" id="p3">
+              Yes! Send us a message and we&apos;ll process your request no
+              questions asked. Do you provide additional support? Chat and email
+              support is available 24/7. Phone lines are open during normal
+              business hours.
+            </p>
+          </section>
         </section>
       </section>
     </section>
@@ -106,19 +151,36 @@
       const question_id = ["q0", "q1", "q2", "q3"];
       const arrow_id = ["arrow0", "arrow1", "arrow2", "arrow3"];
       const btnList = document.getElementsByClassName("btn");
-      console.log(btnList)
+      console.log(btnList);
       Array.from(btnList).forEach((element, index) => {
-        element.addEventListener("click", (e, i) => {
+        element.addEventListener("click", (e) => {
           const question = document.getElementById(question_id[index]);
           const paragraph = document.getElementById(paragraph_id[index]);
           const arrow = document.getElementById(arrow_id[index]);
+          console.log(arrow);
 
-          question.classList.toggle('font-normal');
-          question.classList.toggle('font-bold');
-          paragraph.classList.toggle('hidden');
-          paragraph.classList.toggle('display');
-          arrow.classList.toggle('rotate-0');
-          arrow.classList.toggle('rotate-180');
+          paragraph_id.forEach((_, inside) => {
+            if (index === inside) {
+              question.classList.toggle("font-normal");
+              question.classList.toggle("font-bold");
+              paragraph.classList.toggle("hidden");
+              paragraph.classList.toggle("block");
+              arrow.classList.toggle("rotate-0");
+              arrow.classList.toggle("rotate-180");
+            } else {
+              if (document.getElementById(question_id[inside]).classList.contains("font-bold")) {
+                document
+                  .getElementById(question_id[inside])
+                  .classList.replace("font-bold", "font-normal");
+                document
+                  .getElementById(paragraph_id[inside])
+                  .classList.replace("block", "hidden");
+                document
+                  .getElementById(paragraph_id[inside])
+                  .classList.replace("rotate-0", "rotate-180");
+              }
+            }
+          });
         });
       });
     </script>
