@@ -3,17 +3,31 @@
 @tailwind utilities;
 
 @layer base {
-    *{
-        @apply font-ks text-[#1E1F36]; 
-    }
+  * {
+    @apply font-ks text-[#1E1F36];
+  }
 }
 
-@layer components{
-    .question{
-        @apply  border-b border-[#E8E8EA] border-solid py-4 
-    }
-    .question > section{
-       @apply flex items-center justify-between
-    }
- 
+@layer components {
+  .question {
+    @apply border-b border-[#E8E8EA] border-solid py-4 z-10 lg:w-[350px]; 
+  }
+  .question > section {
+    @apply flex items-center justify-between  z-10;
+  }
+  .card {
+    @apply w-[327px] h-[643px] mt-10 mx-auto lg:w-[920px] lg:h-[500px] lg:m-0;
+  }
+  .answer{
+    @apply pt-3 text-[#787887] text-answers;
+  }
+}
+
+@layer utilities {
+  .clipart {
+    position: absolute;
+    clip: rect(0px, 600px, 1000px, 84px);
+    margin-left: -84px;
+    margin-top: 70px;
+  }
 }
